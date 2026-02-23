@@ -15,17 +15,25 @@
         <Section>
             <div>
                 <h1>Calcule seu índice de massa corporal</h1>
+                <article>
+                    
+                    <div class="div" id="peso">
+                        <label for="ipeso">Peso (kg)</label> <br>
+                        <input type="number" name="peso" id="ipeso" placeholder="75">
+                    </div>
+                    <div class="div" id="altura">
+                        <label for="ipeso">Altura (m)</label> <br>
+                        <input type="number" name="altura" id="ialtura" placeholder="1,70">
+                    </div>
+                </article>
 
-                <label for="ipeso">Peso</label>
-                <input type="number" name="peso" id="ipeso">
+                <div id="calcular">
+                    <button  class="botao">Calcular</button>
+                </div>
 
-                <label for="ipeso">Altura</label>
-                <input type="number" name="altura" id="ialtura">
-
-                <button>calcular</button>
-
-                <div id="res">
+                <div class="div" id="res">
                     <p>Seu IMC é:</p>
+                    <p>Classificação:</p>
                 </div>
             </div>
         </Section>
