@@ -53,8 +53,16 @@ main{
 
 section{
     display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
     padding: 10px;
     height: 100%;
+}
+
+div.section{
+    align-content: space-between;
 }
 
 section h1{
@@ -72,7 +80,7 @@ div.div{
     background-color: var(--branco);
     border-radius: 10px;
     border: 1px dashed black;
-    height: 80px;
+    height: auto;
     text-align: left;
     padding: 15px;
 }
@@ -86,16 +94,18 @@ input{
 article{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+
     gap: 10px;
     width: 100%;
 }
 
 #peso{
-    width: 40%;
+    width: 48%;
 }
 
 #altura{
-width: 50%;
+    width: 48%;
 }
 
 div#calcular{
@@ -113,15 +123,25 @@ div#calcular{
     box-shadow: 1px 2px 5px #457e67;
 }
 
-#res{
-
-}
-
 .botao:hover{
-    /*depois faço*/
+    background-color: #457e67;
+    font-size: 1.3em;
+    box-shadow: 1px 2px 5px black;
 }
 
 footer{
     grid-column: 2/3;
     grid-row: 3/4;
+}
+
+@media (max-width: 380px) {
+    #peso{
+        width: 100%;
+        transition: .2s;
+    }
+    
+    #altura{
+        width: 100%;
+        transition: .2s;
+    }
 }

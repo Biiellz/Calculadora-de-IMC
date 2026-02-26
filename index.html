@@ -8,12 +8,11 @@
 </head>
 <body>
     <header>
-        <img src="imgs/Gemini_Generated_Image_fwqh67fwqh67fwqh.png" alt="Icone de IMC" id="icone">
         <p>Calculadora de IMC</p>
     </header>
     <main>
         <Section>
-            <div>
+            <div class="section">
                 <h1>Calcule seu índice de massa corporal</h1>
                 <article>
                     
@@ -28,11 +27,11 @@
                 </article>
 
                 <div id="calcular">
-                    <button  class="botao">Calcular</button>
+                    <button  class="botao" onclick="calcular()">Calcular</button>
                 </div>
 
                 <div class="div" id="res">
-                    <p>Seu IMC é:</p>
+                    <p>Seu IMC é:</p> <br>
                     <p>Classificação:</p>
                 </div>
             </div>
@@ -41,5 +40,6 @@
     <footer>
         <p>@Criado por Gabriel Siqueira Braga</p>
     </footer>
+    <script src="Scripts/script.js"></script>
 </body>
 </html>
